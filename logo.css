@@ -21,7 +21,9 @@
     margin-top: -26px;
     position: absolute;
     top: 50%;
-    color: #cdcbcd;*
+    color: black;
+ 
+/*    color: #cdcbcd;**/
   }
   
   .owl-nav i {
@@ -35,14 +37,14 @@
   .owl-nav .owl-next {
     right: -30px;
   }
-  .text {
+  strong {
     margin-left: 90px;
 
     font-size:28px;
     font-family:helvetica;
     font-weight:bold;
     /*color:#71d90b;*/
-    color: black;
+    color: white;
     text-transform:uppercase;
   }
   .parpadea {
@@ -74,4 +76,10 @@
     0% { opacity: 2.0; }
      50% { opacity: 0.0; }
     100% { opacity: 2.0; }
+  }
+  p{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+
   }
