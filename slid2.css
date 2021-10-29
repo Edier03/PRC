@@ -1,0 +1,52 @@
+
+.con_slidew{
+    width: 90%;
+    max-width: 690px;
+    max-height: 350px;
+    margin: auto;
+    margin-top: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px white, 0 15px 50px;
+    position: absolute;
+    margin-left: 30px;
+  }
+  .slid{
+    /*ancho de img*/
+    display: flex;
+    width: 400%;
+    height: 400%;
+    margin-left: -100px;
+  }
+  .slid_sec{
+    width: 100%;
+  }
+  .slid_image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slid_botn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .slid_botn:hover{
+    background: white;
+  }
+  .slid_botn-left{
+    left: 10px;
+  }
+  .slid_botn-right{
+    right: 10px;
+  }
+  
