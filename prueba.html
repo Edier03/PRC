@@ -1,136 +1,56 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="prueba.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    </head>
-    <!--Google -Fonts-->
-<link href='https://fonts.googleapis.com/css?family=Sintony:400,700&subset=latin-ext' rel='stylesheet' type='text/css'>
-		
-<!--Font-awsome-->
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<div class="container">
-			<header>
-        <div style="text-align:center;margin-top:25px;font-weight:bold;text-decoration:none;">
-  Visit <a href="https://themeshook.com/" px;target="_blank">My Blog</a>
-</div>
-				<h2>Responsive Menu</h2>
-        
-			</header>
-			
-			<div class="xs-menu-cont">
-			<a id="menutoggle"><i class="fa fa-align-justify"></i> </a>
-				<nav class="xs-menu displaynone">
-					<ul>
-						<li class="active">
-							<a href="#">Home</a>
-						</li>
-						<li>
-							<a href="#">About</a>
-						</li>
-						<li>
-							<a href="#">Services</a>
-						</li>
-						<li>
-							<a href="#">Team</a>
-						</li>
-						<li>
-							<a href="#">Portfolio</a>
-						</li>
-						<li>
-							<a href="#">Blog</a>
-						</li>
-						<li>
-							<a href="#">Contact</a>
-						</li>
-
-					</ul>
-				</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="prueba.css">
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<section class="awSlider">
+		<div  class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+			<li data-target=".carousel" data-slide-to="0" class="active"></li>
+			<li data-target=".carousel" data-slide-to="1"></li>
+			<li data-target=".carousel" data-slide-to="2"></li>
+			<li data-target=".carousel" data-slide-to="3"></li>
+		  </ol>
+	  
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+			<div class="item active">
+			  <img src="data:image/png;base64,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">
+			  <div class="carousel-caption">Görsel #1</div>
 			</div>
-			<nav class="menu">
-				<ul>
-					<li class="active">
-						<a href="#">Home</a>
-					</li>
-					<li class="drop-down">
-						<a href="#">Products</a>
-					 
-						<div class="mega-menu fadeIn animated">
-							<div class="mm-6column">
-								<span class="left-images">
-								<img  src="https://4.bp.blogspot.com/-faF-AemPFUM/U4ryP7pQRsI/AAAAAAAAEvA/fZ-hskCSln4/s1600/Magento%2Bthemes.jpg">
-								<p>Most Popular Styles </p>
-				</span>
-								<span class="categories-list">
-							<ul>
-							<span>Computer</span>
-								<li>Desktops</li>
-								<li>Laptops</li>
-								<li>Tablets</li>
-								<li>Monitors</li>
-								<li>Networking Printers</li>
-								<li>Scanners</li>
-								<li>Jumpers & Cardigans</li>
-								<li><a class="mm-view-more" href="#">View more →</a></li>
-							</ul>
-						</span>
-							
-							</div>
-							<div class="mm-3column">
-						<span class="categories-list">
-						<ul>
-							 <span>TV & Video</span>
-								<li>LED TVs
-								<li>Plasma TVs
-								<li>3D TVs
-								<li>DVD & Blu-ray Players
-								<li>Home Theater Systems
-								<li>Cell Phones
-								<li>Apple iPhone
-								<li><a class="mm-view-more" href="#">View more →</a></li>
-							</ul>
-						</span>							
-							</div>
-							<div class="mm-3column">
-								<span class="categories-list">
-						<ul>
-							<span>Car Electronics</span>
-							<li>GPS & Navigation</li>
-							<li>In-Dash Stereos</li>
-							<li>Speakers</li>
-							<li>Subwoofers</li>
-							<li>Amplifiers</li>
-						    <li>MP3 Players</li>
-							<li>iPods</li>
-						   	<li><a class="mm-view-more" href="#">View more →</a></li>
-						</ul>
-					</span>
-						</div>
-					</div>
-			 
-					</li>
-					<li>
-						<a href="#">Services</a>
-					</li>
-					<li>
-						<a href="#">Team</a>
-					</li>
-					<li>
-						<a href="#">Portfolio</a>
-					</li>
-					<li>
-						<a href="#">Blog</a>
-
-					</li>
-					<li>
-						<a target="_blank" href="http://www.mywebtricks.com/">Contact</a>
-					</li>
-         <li style="float:right;">
-           <a href="http://www.mywebtricks.com/">Go my Blog</a>
-          </li>
-
-				</ul>
-			</nav>
+			<div class="item">
+			  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6n03XJJV_FuXp4LxtsnpntBZFCRUWn8kR3g&usqp=CAU">
+			  <div class="carousel-caption">Görsel #2</div>
+			</div>
+			<div class="item">
+			  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYGSn66CBp5IJeK-DCttpSKTfks8COT9GBHg&usqp=CAU">
+			  <div class="carousel-caption">Görsel #3</div>
+			</div>
+			<div class="item">
+			  <img src="https://www.si.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc5MzYzNDIxNzY0OTg2NTYz/reebok-pump-lead.jpg">
+			  <div class="carousel-caption">Görsel #4</div>
+			</div>
+		  </div>
+	  
+		  <!-- Controls -->
+		  <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Geri</span>
+		  </a>
+		  <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">İleri</span>
+		  </a>
 		</div>
-        <script src="prueba.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	  </section>
+	  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script><script  src="prueba.js"></script>
+</body>
 </html>

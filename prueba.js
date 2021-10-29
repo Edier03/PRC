@@ -1,24 +1,18 @@
- 
-			$(document).ready(function() {
-				//responsive menu toggle
-				$("#menutoggle").click(function() {
-					$('.xs-menu').toggleClass('displaynone');
+$('section.awSlider .carousel').carousel({
+	pause: "hover",
+  interval: 2000
+});
 
-					});
-				//add active class on menu
-				$('ul li').click(function(e) {
-					e.preventDefault();
-					$('li').removeClass('active');
-					$(this).addClass('active');
-				});
-			//drop down menu	
-					$(".drop-down").hover(function() {
-						$('.mega-menu').addClass('display-on');
-					});
-					$(".drop-down").mouseleave(function() {
-						$('.mega-menu').removeClass('display-on');
-					});
-			
-			});
+var startImage = $('section.awSlider .item.active > img').attr('src');
+$('section.awSlider').append('<img src="' + startImage + '">');
 
-	 
+$('section.awSlider .carousel').on('slid.bs.carousel', function () {
+ var bscn = $(this).find('.item.active > img').attr('src');
+	$('section.awSlider > img').attr('src',bscn);
+});
+
+
+/* 
+Philips ambilight tv
+Üzerine gleince duruyor slide
+*/

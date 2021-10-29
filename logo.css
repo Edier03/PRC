@@ -1,13 +1,14 @@
 .carousel-wrap {
-    margin: 90px auto;
+    margin: 10px auto;
     padding: 0 5%;
     width: 85%;
     position: relative;
-    
+  
   }
   .item{
-    background: transparent;
+    background: rgb(165, 104, 104);
     height: 250px;
+    width: 100%;
   }
   /* fix blank or flashing items on carousel */
   .owl-carousel .item {
@@ -17,7 +18,7 @@
   }
   
   /* end fix */
-  .owl-nav > div {
+  .owl-nav  div {
     margin-top: -26px;
     position: absolute;
     top: 50%;
@@ -77,7 +78,7 @@
      50% { opacity: 0.0; }
     100% { opacity: 2.0; }
   }
-  p{
+.carousel-wrap p{
     color: white;
     font-size: 15px;
     text-align: center;
