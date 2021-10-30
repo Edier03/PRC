@@ -38,6 +38,10 @@ button{
     border-radius: 5px;
     color: black;
 }
+button:hover{
+  transition: all ease-in-out 0.3s;
+  border-bottom: solid white;
+}
 /*cuello*/
 .cuello{
     background-color: yellow;
@@ -526,8 +530,9 @@ img:hover {
 }
 #sec_pie_3{
   width: 25%;
-  /*background-color: green;*/
+
 }
+
 .link_pie{
   display: flex;
   margin-top: 15px;
