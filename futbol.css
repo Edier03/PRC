@@ -15,8 +15,8 @@ a{
 .cabecera{
     width: 90%;
     height: 60px;
-    /*background-color: coral;*/
     background-color: transparent;
+    box-shadow: 0 0 0 10px white, 0 15px 50px;
     margin: 0 auto;
 }
 .apple-phone{
@@ -42,225 +42,186 @@ button:hover{
   transition: all ease-in-out 0.3s;
   border-bottom: solid white;
 }
-.dropdownmenu ul, .dropdownmenu li {
-	margin: 0;
-	padding: 0;
+.card{
+  background: rgba(255, 255, 255, 0.549);
 }
-.dropdownmenu ul {
-	background: gray;
-	list-style: none;
-	width: 100%;
-    margin: 0 auto;
-}
-.dropdownmenu li {
-	float: left;
-	position: relative;
-	width:auto;
-}
-.dropdownmenu a {
-	/*background: #30A6E6;*/
-    background: transparent;
-	color: #FFFFFF;
-	display: block;
-	font: bold 12px/20px sans-serif;
-	padding: 10px 25px;
-	text-align: center;
-	text-decoration: none;
-	-webkit-transition: all .25s ease;
-	-moz-transition: all .25s ease;
-	-ms-transition: all .25s ease;
-	-o-transition: all .25s ease;
-	transition: all .25s ease;
-}
-.dropdownmenu li:hover a {
-	background: #000000;
-}
-#submenu {
-	left: 0;
-	opacity: 0;
-	position: absolute;
-	top: 35px;
-    width: 200px;
-	visibility: hidden;
-	z-index: 1;
-}
-li:hover ul#submenu {
-	opacity: 1;
-	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
-	visibility: visible;
-}
-#submenu li {
-	float: none;
-	/*width: 100%;*/
-}
-#submenu a:hover {
-	background: #DF4B05;
-}
-#submenu a {
-	background-color:#000000;
-}
-/*Primer Slider*/
+/*89#card_row{
+  width: 300px;
+}98*/
+strong {
+  margin-left: 90px;
 
-.conta-slider{
-    width: 100%;
-    max-width: 1333px;
-    max-height: 350px;
-    margin: 0 auto;
-    /*margin-top: 30px;*/
-    overflow: hidden;
-    position: absolute;
-    /*margin-left: 30px;*/
-  }
-  .slider{
-    /*ancho de img*/
-    display: flex;
-    width: 500%;
-    height: 500%;
-    margin-left: -100px;
-  }
-  .slider__section{
-    width: 100%;
-  }
-  .slider__img{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .slider__btn{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.7);
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    font-weight: bold;
-    font-family: monospace;
-    text-align: center;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  .slider__btn:hover{
-    background: white;
-  }
-  .slider__btn--left{
-    left: 10px;
-  }
-  .slider__btn--right{
-    right: 10px;
-  }
-  .cuerpo1{
-      width: 100%;
-      background: white;
-      color: black;
-  }
-  .cards1{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    background: transparent;
+  font-size:28px;
+  font-family:helvetica;
+  font-weight:bold;
+  /*color:#71d90b;*/
+  color: white;
+  text-transform:uppercase;
+}
+.parpadea {
   
-  }
-  .carta{
-    
-    width: 20%;
-    height: 350px;
-    background: rgba(255, 255, 255, 0.549);
-  /*  margin-top: 10px;*/
-    margin-left: 50px;
-    margin-right: 0px;
-    margin-top: 30px;
-    float: left;
-    border-bottom-left-radius: 35px;
-    border-bottom-right-radius: 35px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    box-shadow:  0 25px 70px rgba(2, 2, 2, 0.693);
-    transition: all ease-in-out 0.4s;
-  }
-  .carta:hover{
-    transition: all ease-in-out 0.4s;
-    box-shadow:  5px 30px 40px;
-  }
+  animation-name: parpadeo;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 2.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 2.0; }
+}
+#camisa_grande{
+  height: 372px;
+}
+/*.navbas{
+  width: 90%;
+  background-color: tomato;
+  margin: auto;
+}*/
+#move32{
+  text-align: center;
+  margin: auto;
+  margin-left:  43px;
+  margin-right: 20px;
+  background: rgba(255, 255, 255, 0.549);
+  border: none;
+  color: black;
+}
+/*.btn-group{
+  margin: auto;
+  background-color: black;
+  width: 100%;
+}*/
+.nav-bar-brands{
+  line-height: 1.15;
+-webkit-text-size-adjust: 100%;
+--swiper-theme-color: #007aff;
+--swiper-navigation-size: 44px;
+font-family: "Roboto",sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+box-sizing: inherit;
+padding-top: 14px;
+display: flex;
+flex-direction: row;
+padding-left: 0;
+margin: auto 0;
+margin-right: 180px;
+list-style: none;
+/*align-items: center;*/
+justify-content: center;
+}
+.nav-bar-brands li{
+  display: inline-flex;
+}
+.a_h3{
+  font-size: 18px;
+  margin-left: 40px;
+  color: blue;
+}
+.sport-teams{
+  font-size: 0.875rem;
+letter-spacing: 0.05em;
+-webkit-font-smoothing: antialiased;
+width: 90%;
+line-height: 1.3;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+outline: 0;
+font-family: inherit;
+font-weight: inherit;
+font-style: inherit;
+color: inherit;
+}
+.a_team{
+  margin: auto;
+  margin-top: 50px;
+  margin-left: 20px;
+  background-color: transparent;
+}
+.a_team img{
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.pie{
+  width: 90%;
+  margin: 0 auto;
+  /*background-color: rgba(94, 52, 52, 0.549);*/
+  background: transparent;
+  color: white;
+
+}
+.sections{
+  margin: 0 auto;
+  width: 100%;
+}
+.sec_pie{
+  display: inline-block;
+  /*border: 1px solid white;*/
+
+  margin: 0 auto;
+}
+#sec_pie_1{
+  width: 29%;
+  /*background-color: yellow;*/
   
-  .img_carta{
-    object-fit: cover;
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-top: 2px solid black;
-   transition: ease-in-out all 0.3s;
-  }
-  
-  .link_carta{
-    display: flex;
-    margin: auto;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    /*border: 1px solid white;
-    width: 70%;*/
-  }
-  .link_carta:hover{
-    color: white;
-  }
-  .text_sup{
-    display: inline-block;
-  }
-  .link_sup{
-    margin-left: 50px;
-    color: rgb(68, 68, 194);
-    width: 60px;
-    font-family: fantasy;
-    font: 12px;
-  }
-  .link_sup:hover{
-    background-color: gray;
-    border-radius: 5px;
-  }
-  #fila2_carta{
-    height: 150px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  #fila2_carta .img_carta{
-    border-top: 2px solid white;
-  }
-  .p_carta{
-      text-justify: inter-word;
-      width: 200px;
-  }
-  .parpadea {
-    font-size: 30px;
-    margin-left: 50px;
-    animation-name: parpadeo;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  
-    -webkit-animation-name:parpadeo;
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-  }
-  
-  @-moz-keyframes parpadeo{  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-  }
-  
-  @-webkit-keyframes parpadeo {  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-     100% { opacity: 1.0; }
-  }
-  
-  @keyframes parpadeo {  
-    0% { opacity: 2.0; }
-     50% { opacity: 0.0; }
-    100% { opacity: 2.0; }
-  }
+}
+#sec_pie_2{
+  width: 39%;
+  /*background-color: red;*/
+}
+#sec_pie_3{
+  width: 25%;
+
+}
+
+.link_pie{
+  display: flex;
+  margin-top: 15px;
+  width: 50%;
+}
+.link_pie:hover{
+  transition: all ease-in-out 0.4s;
+  border-bottom: solid white;
+}
+.logo_h3{
+  width: 25px;
+}
+.logo_secfinal{
+  width: 15px;
+}
+
+.p_secfinal{
+  margin-bottom: 50px;
+  float: right;
+  font-size: 12px;
+  font-style: oblique;
+}
+.carousel-control-prev, .carousel-control-next{
+  color: black;
+  opacity: 0.1;
+  border-radius: 100px;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover{
+  background-color: rgb(80, 75, 75);
+}
